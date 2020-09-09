@@ -15,6 +15,7 @@ const Posts = (props) => {
       posts.map(post =>{
         return (
           <Post 
+          key={post.id}  
           likePost={likePost} 
           post={post}
           />
@@ -27,5 +28,5 @@ const Posts = (props) => {
     </div>
   );
 };
-
 export default Posts;
+
